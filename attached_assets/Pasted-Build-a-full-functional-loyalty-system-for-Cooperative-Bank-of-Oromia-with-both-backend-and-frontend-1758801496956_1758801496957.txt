@@ -1,0 +1,49 @@
+Build a full-functional loyalty system for Cooperative Bank of Oromia with both backend and frontend.  
+
+Requirements:
+1. **Architecture**:
+   - Use the MERN stack (MongoDB, Express.js, React, Node.js).
+   - Backend: RESTful API with JWT authentication, role-based access (admin, branch manager, customer).
+   - Frontend: Responsive React web app + reusable components that can be wrapped into mini-apps.
+   - Ensure modular design so it can integrate with existing banking apps via API.
+
+2. **Core Features**:
+   - Customer registration (via banking ID, phone, email).
+   - Points system:
+     - Earn points for transactions, savings, referrals, and usage of Coop Bank services.
+     - Define earning rules (configurable by admin).
+   - Redeem points:
+     - For discounts, vouchers, partner services, or direct cashback.
+   - Transaction history & points balance tracking.
+   - Tier system (Silver, Gold, Platinum) with benefits per tier.
+   - Notifications (email/SMS/WhatsApp) for earned/redeemed points.
+   - Multi-language support (English, Afaan Oromo, Amharic).
+
+3. **Admin Panel**:
+   - Dashboard with analytics: total users, total points issued/redeemed, active users.
+   - Manage earning rules, redemption catalog, and tier levels.
+   - Add/edit/delete loyalty campaigns.
+   - Branch-level insights (transactions per branch).
+
+4. **APIs for Integration**:
+   - Secure APIs to connect with mobile banking apps and third-party mini-apps.
+   - Endpoints: `/earnPoints`, `/redeemPoints`, `/checkBalance`, `/getHistory`.
+   - Webhooks support for real-time updates with Coop Bank core system.
+
+5. **Tech Details**:
+   - Authentication: JWT + bcrypt for password hashing.
+   - Database: MongoDB with schemas for Users, Transactions, Points, Rewards, Campaigns.
+   - Frontend: React + TailwindCSS with clean modern UI.
+   - Deployment-ready with Docker and environment variables.
+
+6. **Bonus**:
+   - Exportable reports (CSV/PDF).
+   - Gamification (badges for milestones).
+   - Scalable microservices architecture for future expansion.
+
+Deliverables:
+- Full backend code (Node.js + Express + MongoDB).
+- Full frontend code (React + TailwindCSS).
+- API documentation (Swagger/OpenAPI).
+- Setup instructions (Docker Compose).
+- Example integration snippet for banking app (React Native/Flutter mini-app).
